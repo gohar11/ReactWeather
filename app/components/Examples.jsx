@@ -34,7 +34,7 @@ var Examples = React.createClass({
         console.log(postItems.length);
         return (
             <div>
-                <h3>Examples Component</h3>
+                <h3>Welcome to Examples Component</h3>
                 <a href="javascript:;" onClick={this.getAllPosts}>Get Posts!</a>
                 <table>
                     <thead>
