@@ -1,5 +1,6 @@
 var React = require('react');
 var randomApi = require('randomApi');
+var {Link} = require('react-router');
 
 var Examples = React.createClass({
     getInitialState: function () {
@@ -30,12 +31,18 @@ var Examples = React.createClass({
                 <td>{post.title}</td>
             </tr>
         );
-
-        console.log(postItems.length);
         return (
             <div>
-                <h3>Examples Page!</h3>
+                <h1 className="text-center">Examples Page!</h1>
                 <p>Welcome to Examples Component</p>
+                <ol>
+                    <li>
+                        <Link to="/?location=Lahore">Lahore</Link>
+                    </li>
+                    <li>
+                        <Link to="/?location=Islamabad">Islamabad</Link>
+                    </li>
+                </ol>
                 <a href="javascript:;" onClick={this.getAllPosts}>Get Posts!</a>
                 <table>
                     <thead>
