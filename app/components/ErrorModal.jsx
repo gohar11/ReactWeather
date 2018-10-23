@@ -9,7 +9,7 @@ var ErrorModal = React.createClass({
         var {message} = this.props;
         return (
             <div id="error-modal" className="reveal tiny text-center" data-reveal>
-                <h4 id="modalTitle">Result not found</h4>
+                <h4 id="modalTitle">404</h4>
                 <p class="lead">{message}</p>
                 <button className=" button hollow" data-close="">okay</button>
             </div>
